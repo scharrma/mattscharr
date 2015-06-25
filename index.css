@@ -4,11 +4,9 @@ body {
 	padding: 0;
 
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
 	text-align: center;
-
-	background: black;
-	color: white;
+	background: white;
+	color: black;
 }
 
 a {
@@ -19,23 +17,24 @@ article {
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
-	max-width: 600px;
+	max-width: 400px;
 }
 
 section {
 	margin: 0;
 	padding: 0;
-	display: none;
-	cursor: pointer;
 }
 
 #splash {
+	font-weight: bold;
 	display: block;
+	cursor: pointer;
 }
 
 #splash h1 {
 	position: relative;
 	display: inline-block;
+	margin: 0;
 	padding: 0;
 	opacity: 0.2;
 	text-decoration: none;
