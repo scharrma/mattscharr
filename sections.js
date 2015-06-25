@@ -47,8 +47,8 @@ function display_section(section, rollover)
 $(document).ready(function()
 {
   $FRAMES = $("section");
-  $FIRST  = $("#splash");
-  $LAST   = $("#contact");
+  $FIRST  = $("#first");
+  $LAST   = $("#last");
 
   $FRAMES.on("click", function() { change_sections($(this), 'next') });
   $(window).on("keyup", function(e) { keyup_change_sections(e) })
