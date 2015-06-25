@@ -4,7 +4,6 @@ body {
 	padding: 0;
 
 	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
 	background: white;
 	color: black;
 }
@@ -13,32 +12,41 @@ a {
 	color: #aaa;
 }
 
-article {
+#container {
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
-	max-width: 400px;
+	width: 540px;
 }
 
 section {
-	margin: 0;
-	padding: 0;
-}
-
-#splash {
-	font-weight: bold;
-	display: block;
-	cursor: pointer;
-}
-
-#splash h1 {
 	position: relative;
-	display: inline-block;
 	margin: 0;
+	padding: 0 15px 0 0;
+	max-width: 384px;
+	border-right: solid 1px #aaa;
+	text-align: right;
+	float: left;
+}
+
+p {
+	line-height: 24px;
+	font-size: 12px;
+}
+
+#m {
+	position: relative;
+	display: block;
+	margin: 0 0 0 225px;
 	padding: 0;
 	opacity: 0.2;
+	width: 170px;
+	
 	text-decoration: none;
+	font-weight: bold;
 	font-size: 200px;
+	line-height: 200px;
+	color: black;
 
 	-moz-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
@@ -46,14 +54,52 @@ section {
 	transition: all 1s ease;
 }
 
-#splash h1:hover {
+#m:hover {
 	opacity: 1.0;
 
 	-moz-transform: rotate(5deg);
 	-webkit-transform: rotate(5deg);
 	-o-transform: rotate(5deg);
 	transform: rotate(5deg);
-
-	z-index: 1000;
 }
 
+nav {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: block;
+	margin: 0;
+	padding: 0 0 0 20px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #555;
+	text-decoration: none;
+	background: none;
+	cursor: pointer;
+
+	-moz-transition: background 1s linear;
+	-webkit-transition: background 1s linear;
+	-o-transition: background 1s linear;
+	transition: background 1s linear;
+}
+
+nav ul li a {
+	display: block;
+	width: 120px;
+	height: 40px;
+	text-decoration: none;
+	color: #555;
+}
+
+nav ul li:hover {
+	background: #ddd;
+}
